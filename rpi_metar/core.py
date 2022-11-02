@@ -278,9 +278,10 @@ def load_configuration():
         'MVFR': colors.BLUE,
         'UNKNOWN': colors.BLACK,
         'OFF': colors.BLACK,
-        'MISSING': colors.WHITE,
+        'MISSING': colors.BLACK,
         'THUNDERSTORM': colors.MAGENTA,
         'WINDY': colors.ORANGE,
+        'TIMEOUT': colors.WHITE,
     }
 
     if cfg.has_section('flight_categories'):

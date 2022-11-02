@@ -20,6 +20,7 @@ class FlightCategory(Enum):
     THUNDERSTORM = MAGENTA
     WINDY = ORANGE
     BOOTUP = CYAN
+    TIMEOUT = WHITE
 
 def get_conditions(metar_info):
     """Returns the visibility, ceiling, wind speed, and gusts for a given airport from some metar info."""
@@ -97,7 +98,7 @@ def get_flight_category(visibility, ceiling):
     # http://www.faraim.org/aim/aim-4-03-14-446.html
     try:
         if visibility and ceiling == 12345678:
-            return FlightCategory.MISSING
+            return FlightCategory.TIMEOUT
         elif visibility < 1 or ceiling < 500:
             return FlightCategory.LIFR
         elif 1 <= visibility < 3 or 500 <= ceiling < 1000:
