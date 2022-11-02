@@ -12,7 +12,7 @@ WHITE = Color(255, 255, 255)
 ORANGE = Color(140, 250, 0)
 ORANGE = Color(130, 250, 0)
 CYAN = Color(250, 0, 220)
-WHITELOW = Color(200, 200, 200)
+WHITELOW = Color(100, 100, 100)
 
 # For gamma correction
 # https://learn.adafruit.com/led-tricks-gamma-correction/the-issue
