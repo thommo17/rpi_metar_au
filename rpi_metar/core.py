@@ -278,7 +278,7 @@ def load_configuration():
         'MVFR': colors.BLUE,
         'UNKNOWN': colors.BLACK,
         'OFF': colors.BLACK,
-        'MISSING': colors.MAGENTA,
+        'MISSING': colors.BLACK,
         'THUNDERSTORM': colors.MAGENTA,
         'WINDY': colors.ORANGE,
     }
