@@ -3,7 +3,7 @@ import logging
 import re
 from enum import Enum
 from fractions import Fraction
-from rpi_metar.leds import GREEN, RED, BLUE, MAGENTA, YELLOW, BLACK, ORANGE, WHITE, CYAN
+from rpi_metar.leds import GREEN, RED, BLUE, MAGENTA, YELLOW, BLACK, ORANGE, WHITE, CYAN, WHITELOW
 from datetime import datetime, timedelta
 
 log = logging.getLogger(__name__)
