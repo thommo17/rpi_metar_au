@@ -281,7 +281,7 @@ def load_configuration():
         'MISSING': colors.BLACK,
         'THUNDERSTORM': colors.MAGENTA,
         'WINDY': colors.ORANGE,
-        'TIMEOUT': colors.WHITE,
+        'TIMEOUT': colors.WHITELOW,
     }
 
     if cfg.has_section('flight_categories'):

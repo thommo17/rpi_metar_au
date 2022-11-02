@@ -20,7 +20,7 @@ class FlightCategory(Enum):
     THUNDERSTORM = MAGENTA
     WINDY = ORANGE
     BOOTUP = CYAN
-    TIMEOUT = WHITE
+    TIMEOUT = WHITELOW
 
 def get_conditions(metar_info):
     """Returns the visibility, ceiling, wind speed, and gusts for a given airport from some metar info."""
