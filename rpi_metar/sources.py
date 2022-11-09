@@ -298,7 +298,7 @@ class IFIS(METARSource):
             r = session.post(self.URL, data=self.data_payload)
             log.info(r.text)
 
-        matches = re.finditer(r'(?:METAR |SPECI )(?P<METAR>(?P<CODE>\w{4}).*?)(?:<br/>|<h3>|=</span>|<br />)', r.text)
+        matches = re.finditer(r'(?:METAR |SPECI )(?P<METAR>(?P<CODE>\w{4})(.|\n)*?)(?:<h3>|=</span>|<br />)', r.text)
 
         metars = {}
 
