@@ -73,16 +73,16 @@ def get_conditions(metar_info):
         speed = int(match.group('speed'))
         gust = int(match.group('gust')) if match.group('gust') else 0
 
-    # METAR time
-    match = re.search(r'(?P<UTC>\d{6})(?:Z)', metar_info)
-    if match:
-        ztime = match.group('UTC')
-        ztime_object = datetime.strptime(ztime, '%d%H%M')
-        ztime_object = ztime_object.replace(year=ztime_object.now().year,month=ztime_object.now().month)
-        Z_limit = datetime.utcnow() - timedelta(minutes=90)
-        if ztime_object < Z_limit:
-            visibility = 12345678
-            ceiling = 12345678
+    # # METAR time
+    # match = re.search(r'(?P<UTC>\d{6})(?:Z)', metar_info)
+    # if match:
+    #     ztime = match.group('UTC')
+    #     ztime_object = datetime.strptime(ztime, '%d%H%M')
+    #     ztime_object = ztime_object.replace(year=ztime_object.now().year,month=ztime_object.now().month)
+    #     Z_limit = datetime.utcnow() - timedelta(minutes=90)
+    #     if ztime_object < Z_limit:
+    #         visibility = 12345678
+    #         ceiling = 12345678
 
 
     return (visibility, ceiling, speed, gust)
