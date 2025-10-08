@@ -37,16 +37,6 @@ class METARSource:
 
 class NOAA(METARSource):
 
-    # URL = (
-    #     'https://{subdomain}.aviationweather.gov/cgi-bin/data/dataserver.php'
-    #     '?dataSource=metars'
-    #     '&requestType=retrieve'
-    #     '&format=xml'
-    #     '&hoursBeforeNow=2'
-    #     '&mostRecentForEachStation=true'
-    #     '&stationString={airport_codes}'
-    # )
-
     URL = (
         'https://{subdomain}.aviationweather.gov/api/data/metar?ids={airport_codes}&format=xml&taf=false&hours=2'
     )
