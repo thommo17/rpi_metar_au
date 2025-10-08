@@ -301,3 +301,4 @@ class IFIS(METARSource):
             metars[info['CODE'].upper()] = {'raw_text': info['METAR']}
 
         return metars
+
