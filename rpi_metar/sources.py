@@ -48,7 +48,7 @@ class NOAA(METARSource):
     # )
 
     URL = (
-        'https://{subdomain}.aviationweather.gov/api/data/metar?ids={airport_codes}&format=raw&taf=false&hours=2'
+        'https://{subdomain}.aviationweather.gov/api/data/metar?ids={airport_codes}&format=xml&taf=false&hours=2'
     )
 
     def __init__(self, airport_codes, subdomain='www', **kwargs):
