@@ -26,7 +26,7 @@ METAR_REFRESH_RATE = 5 * 60  # How often METAR data should be fetched, in second
 WIND_DISPLAY_RATE = 5  # How often to show that it's windy, in seconds
 LIGHTNING_STRIKE_RATE = 5  # How regularly should lightning strike, in seconds
 
-FAILURE_THRESHOLD = 3  # How many times do we not get data before we reboot
+FAILURE_THRESHOLD = 6  # How many times do we not get data before we reboot
 
 ENCODER_QUEUE = Queue()
 METAR_QUEUE = Queue()
